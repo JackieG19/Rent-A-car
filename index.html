@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RentAcar</title>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+<body style="background-color:#66c2ff">
+
+    <div>
+    <h1>Rentopia</h1>
+    
+        <div style="background-color: #00cc44; border-style: solid; padding:20px;">
+            <h3>Economy:</h3>
+            <p id="display"></p>
+        
+        </div><br>
+        
+        <div style="background-color: #ff6666; border-style: solid; padding:20px;">
+            <h3>Standard:</h3>
+            <p id="display2"></p>
+        </div><br>
+     
+    </div>
+
+<br><br><br>
+
+    <div>
+        <form>
+          Renter's Name: <input type="text" name="name" required>
+          <select id="select" onchange="myDisplay(this.value)" required>
+              <option value="none">Car Type</option>
+              <option value="Economy">Economy</option>
+              <option value="Standard">Standard</option>
+            </select>
+          <button type="submit" value="Submit" onclick="myFunction()">Submit</button>
+          <p id="window"></p>
+        </form>
+    </div>
+
+</body>
+
+</html>
